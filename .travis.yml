@@ -2,27 +2,28 @@
 language: generic
 
 sudo: required
-dist: trusty
+# This job ran on our Trusty environment, which was updated on Wednesday, July 12th. Read all about it in the docs and take note that you can add group: deprecated-2017Q3 in your .travis.yml file to use the previous version.
+# dist: trusty
 
 addons:
   apt:
     sources:
       - debian-sid
     packages:
-      # - texlive-latex-base
-      # - texlive-binaries
-      # - texlive-xetex
-      # - texlive-generic-extra  # tracklang.sty
-      # - texlive-generic-recommended
-      # - texlive-latex-extra
-      # - texlive-latex-recommended
-      # - texlive-science  # bytefield.sty
-      # - latex-xcolor
-      # # Fonts
-      # - lmodern
-      # - fonts-lmodern
-      # - fonts-liberation
-      #   #- fonts-droid
+      - texlive-latex-base
+      - texlive-binaries
+      - texlive-xetex
+      - texlive-generic-extra  # tracklang.sty
+      - texlive-generic-recommended
+      - texlive-latex-extra
+      - texlive-latex-recommended
+      - texlive-science  # bytefield.sty
+      - latex-xcolor
+      # Fonts
+      - lmodern
+      - fonts-lmodern
+      - fonts-liberation
+        #- fonts-droid
       - texlive-fonts-recommended
       - texlive-fonts-extra
 
